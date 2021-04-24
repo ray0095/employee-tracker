@@ -46,6 +46,10 @@ const runPrompts = () => {
           updateEmployee();
           break;
 
+        case 'EXIT':
+          connection.end();
+          break;
+
         default:
           console.log(`Invalid action: ${answer.action}`);
           break;
